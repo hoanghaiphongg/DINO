@@ -6,7 +6,7 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader, SubsetRandomSampler
 from torchvision.datasets import ImageFolder
 
-from augmentation import DataAugmentation
+from .augmentation import DataAugmentation
 
 
 
