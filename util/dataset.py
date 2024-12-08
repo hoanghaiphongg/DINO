@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 import torchvision.transforms as transforms
-from torch.utils.data import DataLoader, SubsetRandomSampler
+from torch.utils.data import DataLoader, SubsetRandomSampler, random_split
 from torchvision.datasets import ImageFolder
 
 from .augmentation import DataAugmentation
