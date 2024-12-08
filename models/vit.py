@@ -3,7 +3,7 @@ import math
 import torch
 from torch import nn
 from torch.nn import functional as F
-from timm.models.layers import DropPath, trunc_normal_
+from timm.layers import DropPath, trunc_normal_
 
 
 class PatchEmbed(nn.Module):

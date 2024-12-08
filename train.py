@@ -1,5 +1,5 @@
 import torch
-from .util.util import AverageMeter, clip_gradients, cancel_gradients_last_layer
+from util.util import AverageMeter, clip_gradients, cancel_gradients_last_layer
 from torch.utils.tensorboard import SummaryWriter
 
 

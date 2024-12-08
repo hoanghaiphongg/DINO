@@ -7,14 +7,14 @@ import torch
 import torch.optim as optim
 from torchsummary import summary
 
-from .util.dataset import get_dataset
-from .util.loss import DINOLoss
-from .util.util import get_params_groups, cosine_scheduler
-from .util.callback import CheckPoint
-from .models.model_utils import MultiCropWrapper, DINOHead
-from .models.resnet import ResNet50
-from .models import vit
-from .train import train_on_epoch, validate_on_epoch
+from util.dataset import get_dataset
+from util.loss import DINOLoss
+from util.util import get_params_groups, cosine_scheduler
+from util.callback import CheckPoint
+from models.model_utils import MultiCropWrapper, DINOHead
+from models.resnet import ResNet50
+from models import vit
+from train import train_on_epoch, validate_on_epoch
 
 
 def fit(student, teacher, train_loader, validation_loader, dino_loss, 

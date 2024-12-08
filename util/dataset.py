@@ -6,6 +6,9 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader, SubsetRandomSampler
 from torchvision.datasets import ImageFolder
 
+from augmentation import DataAugmentation
+
+
 
 def get_dataset(global_img_size=224, 
                 local_img_size=96, 
